@@ -1,0 +1,47 @@
+.careers_post {
+  & > .container {
+    @apply py-20;
+  }
+
+  &_content {
+    @apply flex flex-col gap-10 md:flex-row md:gap-28 mb-16;
+  }
+
+  &_info {
+    @apply p-7 bg-sky-100 rounded-3xl flex flex-col gap-10 md:flex-row md:gap-16 md:p-10;
+
+    &_sidebar {
+      @apply flex md:flex-col gap-5 items-start flex-wrap;
+
+      .item {
+        @apply text-xl font-semibold hover:text-orange-500;
+
+        &.active {
+          @apply text-orange-500;
+        }
+      }
+    }
+
+    &_content {
+      @apply text-base leading-loose flex-1;
+    }
+  }
+}
+
+.careers_apply {
+  & > .container {
+    @apply py-10 md:py-16;
+  }
+
+  &_form {
+    @apply grid gap-3 md:grid-cols-2 md:gap-6;
+
+    .form_input {
+      @apply bg-gray-200/80;
+    }
+
+    textarea {
+      @apply md:col-span-2;
+    }
+  }
+}

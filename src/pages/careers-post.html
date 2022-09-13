@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers Post - Finsweet</title>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    {{> navbar}}
+
+    <!-- #################
+    ##	careers post area start	##
+    ################# -->
+    <div class="careers_post">
+      <div class="container">
+        <div class="area_header">
+          <h2 class="heading-1">Testing Engineer</h2>
+        </div>
+
+        <div class="careers_post_content">
+          <div class="card">
+            <div class="card_content">
+              <h2 class="card_title">Job Description</h2>
+              <p class="card_text">
+                Remote, India , 4 to 5 Years Of Experience Department: Website
+                Design 5 Positions Available.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_content">
+              <h2 class="card_title">Salary</h2>
+              <p class="card_text">$30000 Per Anum</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="careers_post_info">
+          <div class="careers_post_info_sidebar">
+            <button class="item active">Details</button>
+            <button class="item">Requirements</button>
+            <button class="item">Responsibilities</button>
+          </div>
+          <div class="careers_post_info_content">
+            Design & Create highly engaging industry-related content in both
+            photo, gif & video format Publish Posts on various social media
+            channels Promote content on social networks and monitor engagement
+            (e.g. comments and shares) Research industry-related topics Editing
+            audio and sound design on projects Engage in opportunities to
+            develop original content and concepts for web and mobile Create
+            motion graphics and animations using 2D and 3D applications for
+            marketing and promotional usage.
+            <br />
+            Manage the day-to-day handling of all social media channels such as
+            LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and
+            YouTube, adapting content to suit different channels
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- careers post end -->
+
+    <!-- #################
+    ##	careers apply area start	##
+    ################# -->
+    <div class="careers_apply">
+      <div class="container">
+        <div class="area_header">
+          <h2 class="heading-2">Apply Now</h2>
+        </div>
+
+        <form class="careers_apply_form">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            class="form_input"
+          />
+
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            class="form_input"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            class="form_input"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+            class="form_input"
+          />
+
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Type Message"
+            class="form_input"
+            rows="5"
+          ></textarea>
+
+          <div>
+            <button class="btn btn-orange">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    {{> footer}}
+  </body>
+</html>

@@ -1,0 +1,80 @@
+/* area */
+.area {
+  &_header {
+    @apply grid grid-cols-1 gap-6 mb-16;
+  }
+}
+
+/* link */
+.link {
+  @apply inline-flex items-center gap-1 text-orange-500 font-semibold;
+
+  & > .icon {
+    @apply duration-300;
+  }
+
+  &:hover > .icon {
+    @apply pl-4;
+  }
+}
+
+/* post author */
+.post_author {
+  @apply flex items-center gap-3;
+
+  &_media {
+    @apply w-8 h-8 block overflow-hidden rounded-full ring ring-orange-500;
+
+    & > img {
+      @apply w-full h-full object-cover object-center;
+    }
+  }
+
+  &_content {
+    & > .title {
+      @apply text-base font-semibold;
+    }
+  }
+}
+
+/* raw content */
+.raw_content {
+  & > {
+    p {
+      @apply text-base leading-loose;
+    }
+
+    h1 {
+      @apply text-3xl md:text-4xl lg:text-5xl;
+    }
+
+    h2 {
+      @apply text-2xl md:text-3xl lg:text-4xl;
+    }
+
+    h3 {
+      @apply text-xl md:text-2xl lg:text-3xl;
+    }
+
+    h4 {
+      @apply text-xl md:text-2xl;
+    }
+
+    h5 {
+      @apply text-xl;
+    }
+
+    h6 {
+      @apply text-lg;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply leading-snug font-semibold;
+    }
+  }
+}

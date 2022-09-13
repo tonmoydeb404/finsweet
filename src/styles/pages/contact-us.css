@@ -1,0 +1,37 @@
+.contact {
+  & > .container {
+    @apply py-28 grid lg:grid-cols-2 gap-x-24 gap-y-10 lg:gap-y-16;
+  }
+
+  .area_header {
+    @apply mb-0 order-1;
+  }
+
+  & &_form {
+    @apply flex flex-col gap-4 order-2 lg:order-3;
+
+    .form_input {
+      @apply bg-gray-200/60;
+    }
+
+    .btn {
+      @apply mt-4 w-auto self-start;
+    }
+  }
+
+  & &_info {
+    @apply grid md:grid-cols-2 gap-10 md:gap-16 order-3 lg:order-2;
+
+    .card_title {
+      @apply mb-4;
+    }
+  }
+
+  &_map {
+    @apply w-full order-4;
+
+    & > iframe {
+      @apply w-full aspect-video;
+    }
+  }
+}

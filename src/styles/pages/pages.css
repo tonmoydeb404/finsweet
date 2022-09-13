@@ -1,0 +1,17 @@
+.site_pages {
+  & > .container {
+    @apply py-16 md:py-20 lg:py-28 lg:w-8/12 xl:w-7/12 mx-auto;
+  }
+
+  &_title {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4;
+  }
+
+  &_header {
+    @apply mb-12;
+
+    .text {
+      @apply font-medium text-gray-700;
+    }
+  }
+}

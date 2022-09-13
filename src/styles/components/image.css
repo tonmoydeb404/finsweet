@@ -1,0 +1,16 @@
+.image-1 {
+  @apply relative overflow-hidden rounded-xl;
+}
+
+.image-1 > img {
+  @apply w-full h-full object-cover object-center grayscale duration-150 rounded-xl;
+}
+
+.image-1:hover > img {
+  @apply grayscale-0;
+}
+
+.image-1::after {
+  content: "";
+  @apply w-24 bg-orange-500 absolute top-0 left-0 h-full mix-blend-multiply pointer-events-none;
+}

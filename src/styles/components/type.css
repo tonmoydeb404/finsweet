@@ -1,0 +1,20 @@
+.heading-1 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-semibold;
+}
+
+.heading-2 {
+  @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+}
+
+.heading-3 {
+  @apply text-3xl lg:text-4xl font-semibold;
+}
+
+/* text style */
+.text-1 {
+  @apply text-lg leading-[30px];
+}
+
+.text-2 {
+  @apply text-base leading-[28px];
+}

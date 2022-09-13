@@ -1,0 +1,68 @@
+.card {
+  @apply flex flex-col;
+
+  &_media > img {
+    @apply w-full overflow-hidden;
+  }
+
+  &_icon {
+    @apply text-orange-500 text-4xl;
+  }
+
+  &_content {
+    @apply flex flex-col;
+  }
+
+  &_subtitle {
+    @apply text-sm font-semibold;
+  }
+
+  &_title {
+    @apply text-2xl font-medium;
+  }
+
+  &_text {
+    @apply text-base font-normal;
+  }
+
+  &_link {
+    @apply flex items-center gap-1 text-orange-500 font-semibold;
+  }
+
+  &_link .icon {
+    @apply duration-300;
+  }
+
+  &_link:hover > .icon {
+    @apply pl-4;
+  }
+}
+
+/* intro card */
+
+.intro_card {
+  @apply relative rounded-xl overflow-hidden;
+
+  & .card_media {
+    @apply absolute top-0 left-0 w-full h-full pointer-events-none;
+
+    & > img {
+      @apply w-full h-full object-cover object-center grayscale pointer-events-none;
+    }
+  }
+
+  & > .card_content {
+    @apply absolute w-full left-0 min-h-[40%] bg-black/80 text-white px-4 py-5 rounded-xl bottom-0 translate-y-full duration-500;
+
+    & > .card_subtitle {
+      @apply mb-3;
+    }
+
+    & > .card_title {
+      @apply mb-1;
+    }
+  }
+  &:hover > .card_content {
+    @apply bottom-0 translate-y-0;
+  }
+}

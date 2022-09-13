@@ -1,0 +1,9 @@
+/* custom base css */
+body {
+  @apply text-gray-800 bg-white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

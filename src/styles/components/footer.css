@@ -1,0 +1,94 @@
+.footer {
+  @apply bg-slate-800 text-white relative overflow-hidden;
+
+  &::after,
+  &::before {
+    content: "";
+    @apply bg-orange-500 absolute rounded-2xl w-10 md:w-14 h-44;
+  }
+
+  &::after {
+    @apply top-5 -right-5;
+  }
+
+  &::before {
+    @apply -bottom-5 -left-5 hidden lg:block;
+  }
+
+  & > .container {
+    @apply pt-16 pb-10;
+  }
+
+  &_top {
+    @apply flex gap-10 flex-col md:gap-16 md:flex-row flex-wrap;
+  }
+
+  /* footer info section */
+  &_info {
+    @apply w-11/12  md:w-5/12 lg:w-4/12;
+  }
+
+  &_brand {
+    @apply text-xl mb-2 hover:text-orange-500;
+  }
+
+  /* footer social icons */
+  &_social {
+    @apply flex items-center gap-3 text-2xl mt-5;
+
+    &_link {
+      @apply text-white hover:text-orange-500;
+    }
+  }
+
+  /* footer links section */
+  &_links {
+    &_title {
+      @apply mb-4 text-lg font-semibold;
+    }
+
+    &_list {
+      @apply flex flex-col gap-4;
+
+      & > li > a {
+        @apply hover:text-orange-500;
+      }
+    }
+  }
+
+  /* footer subscribe section */
+  &_subscribe {
+    @apply flex-1;
+
+    &_title {
+      @apply mb-4 text-lg font-semibold;
+    }
+
+    &_form {
+      @apply flex flex-col gap-4 items-start;
+    }
+
+    &_form .form_input {
+      @apply w-full;
+    }
+  }
+
+  /* footer bottom part */
+  &_bottom {
+    @apply flex items-center justify-between mt-10 flex-wrap-reverse gap-5;
+
+    &_links {
+      @apply flex items-center gap-4 justify-center flex-wrap;
+
+      & > li > a {
+        @apply hover:text-orange-500;
+      }
+    }
+  }
+
+  &_credit {
+    & > a {
+      @apply text-orange-500 hover:text-orange-600 font-semibold;
+    }
+  }
+}

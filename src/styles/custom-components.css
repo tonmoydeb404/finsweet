@@ -1,0 +1,20 @@
+/* components */
+@import "./components/navbar.css";
+@import "./components/footer.css";
+@import "./components/card.css";
+@import "./components/type.css";
+@import "./components/button.css";
+@import "./components/form.css";
+@import "./components/image.css";
+@import "./components/common.css";
+
+/* pages */
+@import "./pages/index.css";
+@import "./pages/about.css";
+@import "./pages/careers.css";
+@import "./pages/services.css";
+@import "./pages/blog.css";
+@import "./pages/contact-us.css";
+@import "./pages/blog-post.css";
+@import "./pages/careers-post.css";
+@import "./pages/pages.css";

@@ -1,0 +1,34 @@
+.blog_post {
+  & > .container {
+    @apply py-10 md:py-16;
+  }
+  &_thumb {
+    @apply w-full aspect-video overflow-hidden rounded-2xl md:rounded-3xl mb-5 md:mb-10;
+
+    & > img {
+      @apply w-full h-full object-cover object-center;
+    }
+  }
+
+  &_header {
+    @apply flex flex-col gap-6 mb-8;
+  }
+
+  &_title {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold;
+  }
+
+  .post_author {
+    &_content {
+      @apply flex flex-col md:flex-row md:items-center md:gap-5;
+
+      & > .subtitle {
+        @apply text-sm md:text-base;
+      }
+    }
+  }
+
+  &_body {
+    @apply lg:w-9/12 xl:w-7/12 mx-auto;
+  }
+}

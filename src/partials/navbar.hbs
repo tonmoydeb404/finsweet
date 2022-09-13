@@ -1,0 +1,42 @@
+<!-- #################
+    ##	navbar start	##
+    ################# -->
+<nav class="navbar">
+  <div class="container">
+    <!-- navbar logo -->
+    <h1 class="navbar_brand">
+      <a href="/">{finsweet</a>
+    </h1>
+
+    <!-- navbar toggler -->
+    <button class="navbar_toggler" id="navbarToggler">
+      <span class="bx bx-menu icon"></span>
+    </button>
+
+    <!-- navbar links -->
+    <ul class="navbar_nav" id="navbarNav">
+      <div class="navbar_nav_wrapper">
+        <li>
+          <a href="/pages/about.html">About Us</a>
+        </li>
+        <li><a href="/pages/careers.html">Careers</a></li>
+        <li><a href="/pages/services.html">Services</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+        <li>
+          <a href="/pages/contact-us.html">Contact us</a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-orange-faded">Clone project</a>
+        </li>
+      </div>
+
+    </ul>
+  </div>
+</nav>
+<!-- navbar end -->
+
+<script>
+  const toggler = document.getElementById("navbarToggler"); const navbarNav =
+  document.getElementById("navbarNav"); toggler.addEventListener("click", () =>
+  { navbarNav.classList.toggle('open') })
+</script>

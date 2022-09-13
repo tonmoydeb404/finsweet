@@ -1,0 +1,39 @@
+.navbar {
+  @apply bg-white z-[9999] sticky top-0 left-0 w-full shadow;
+
+  & > .container {
+    @apply flex items-center bg-white z-10 py-3;
+  }
+
+  &_brand {
+    @apply mr-auto;
+
+    & > a {
+      @apply text-2xl font-semibold;
+    }
+  }
+
+  &_toggler {
+    @apply lg:hidden px-3 py-1.5 bg-orange-500 inline-block rounded text-white;
+
+    & > .icon {
+      @apply inline-block;
+    }
+  }
+
+  &_nav {
+    @apply absolute bottom-0 left-0 w-full bg-white -translate-y-full duration-500  lg:static lg:left-auto lg:bottom-auto lg:translate-y-0 -z-[1] lg:z-auto lg:w-auto;
+
+    &.open {
+      @apply translate-y-full lg:translate-y-0;
+    }
+
+    &_wrapper {
+      @apply container py-5 flex gap-8 flex-col items-start lg:items-center lg:flex-row lg:w-auto lg:m-0 lg:p-0;
+
+      & > li {
+        @apply text-base capitalize font-semibold hover:text-orange-500;
+      }
+    }
+  }
+}

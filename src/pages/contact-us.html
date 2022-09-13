@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Finsweet</title>
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    {{> navbar}}
+
+    <!-- #################
+    ##	contact us start	##
+    ################# -->
+    <div class="contact">
+      <div class="container">
+        <div class="area_header">
+          <h2 class="heading-2 title">
+            Have a question ? Let's get in touch with us.
+          </h2>
+          <div class="text-1 text">
+            Fill up the Form and ou team will get back to within 24 hrs
+          </div>
+        </div>
+
+        <div class="contact_info">
+          <div class="card">
+            <div class="card_content">
+              <h2 class="card_title">Location</h2>
+              <p class="card_text">DLF Cybercity, Bhubaneswar, India, &52050</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_content">
+              <h2 class="card_title">Contact Us</h2>
+              <a href="#" class="card_text"> 020 7993 2905 </a>
+              <a href="#" class="card_text"> hi@finsweet.com </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact_form">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            class="form_input"
+          />
+
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            class="form_input"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            class="form_input"
+          />
+
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Type Message"
+            class="form_input"
+            rows="5"
+          ></textarea>
+
+          <button class="btn btn-orange">Submit</button>
+        </form>
+
+        <div class="contact_map">
+          <iframe
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=DLF%20Cybercity,%20Bhubaneswar,%20India,%20&52050&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    {{> footer}}
+  </body>
+</html>

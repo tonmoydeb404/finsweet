@@ -1,0 +1,21 @@
+.careers_positions {
+  &_content {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-10;
+
+    & > .card {
+      @apply bg-sky-100 rounded-xl;
+
+      & > .card_content {
+        @apply px-9 py-8;
+
+        & > .card_subtitle {
+          @apply text-gray-600 mt-2;
+        }
+
+        & > .card_link {
+          @apply mt-8;
+        }
+      }
+    }
+  }
+}
